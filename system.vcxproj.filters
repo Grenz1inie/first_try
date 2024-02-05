@@ -15,22 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="struct_and_functions.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="basic_header.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sub_manu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="main_manu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="main.c">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="functions.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="basic.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="user.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="manu.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
