@@ -12,8 +12,6 @@ void main_login_manu(FILE* stream)
 	gets(account);
 	gets(password);
 
-
-
 				admin(stream);
 }
 
