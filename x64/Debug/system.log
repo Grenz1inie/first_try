@@ -1,16 +1,16 @@
 ﻿  main.c
-C:\code\system\functions.h(68,11): warning C4087: “getchar”: 用“void”参数列表声明
-C:\code\system\functions.h(68,28): warning C4087: “getchar”: 用“void”参数列表声明
-C:\code\system\functions.h(77,12): warning C4087: “getchar”: 用“void”参数列表声明
-C:\code\system\functions.h(77,29): warning C4087: “getchar”: 用“void”参数列表声明
-C:\code\system\functions.h(85,11): warning C4087: “getchar”: 用“void”参数列表声明
-C:\code\system\functions.h(85,28): warning C4087: “getchar”: 用“void”参数列表声明
-C:\code\system\functions.h(101,10): warning C4087: “getchar”: 用“void”参数列表声明
-C:\code\system\functions.h(101,27): warning C4087: “getchar”: 用“void”参数列表声明
-C:\code\system\functions.h(123,1): warning C4029: 声明的形参表不同于定义
-C:\code\system\functions.h(136,10): warning C4087: “getchar”: 用“void”参数列表声明
-C:\code\system\functions.h(151,19): warning C4047: “!=”:“wchar_t [100]”与“int”的间接级别不同
-C:\code\system\user.h(25,28): warning C4087: “getchar”: 用“void”参数列表声明
-C:\code\system\manu.h(13,32): warning C4087: “getchar”: 用“void”参数列表声明
-C:\code\system\manu.h(16,35): warning C4087: “getchar”: 用“void”参数列表声明
-  system.vcxproj -> C:\code\system\x64\Debug\system.exe
+E:\Git repository\first_try\functions.h(68,11): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\functions.h(68,28): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\functions.h(77,12): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\functions.h(77,29): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\functions.h(85,11): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\functions.h(85,28): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\functions.h(101,10): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\functions.h(101,27): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\functions.h(137,10): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\functions.h(147,15): warning C4047: “函数”:“FILE *”与“int”的间接级别不同
+E:\Git repository\first_try\functions.h(147,10): warning C4024: “ferror”: 形参和实参 1 的类型不同
+E:\Git repository\first_try\user.h(25,28): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\manu.h(13,32): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\manu.h(16,35): warning C4087: “getchar”: 用“void”参数列表声明
+  system.vcxproj -> E:\Git repository\first_try\x64\Debug\system.exe

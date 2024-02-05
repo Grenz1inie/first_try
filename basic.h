@@ -8,5 +8,6 @@
 #include<string.h>
 #include<stdlib.h>
 #include <wchar.h>  
+#include<errno.h>
 
 #endif

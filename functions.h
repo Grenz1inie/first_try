@@ -21,24 +21,24 @@ void loadFromFile(struct customer* phead, const wchar_t* filename);
 
 struct expense_record
 {
-	int time[10];
-	wchar_t commodity_name[100];
-	float value[3];
+	int time[10];					//购买时间
+	wchar_t commodity_name[100];	//商品名称
+	float value[3];					//数量，单价，总价
 };
 
 struct customer
 {
-	wchar_t name[100];
-	int phone_number[20];
-	struct expense_record;
-	struct customer* next;
+	char access[10];		//用户权限
+	wchar_t name[100];		//用户姓名
+	int phone_number[20];	//用户联系方式
+	struct expense_record;	//用户消费记录
+	struct customer* next;	//下一节点
 };
 
 struct customer* create(void)
 {
 	struct customer* phead;
 	phead = (struct customer*)malloc(sizeof(struct customer));
-	memcpy(phead->name, L"admin", sizeof(wchar_t) * (wcslen(L"admin") + 1));
 	phead->next = NULL;
 	return phead;
 }
@@ -119,44 +119,36 @@ void cleardata(struct customer* phead)
 	free(phead);
 }
 
-void saveToFile(struct customer* phead, const wchar_t* filename, FILE* stream)
+void check(struct customer* phead, int num, FILE* stream)
 {
-	FILE* fp = fopen("data.txt", "w");
-	if (!fp)
-	{
-		printf("无法打开文件\n");
-		return;
-	}
-	for (struct customer* temp = phead->next; temp != NULL; temp = temp->next)
-	{
-		fwprintf(fp, L"%ls", temp->name);
-	}
-	fclose(fp);
+	if (phead->next == NULL)
+		printf("No data\n");
+	else
+		for (; num > 0; num-- )
+			phead = phead->next;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+
+void SaveToFile(struct customer* phead,  FILE* stream)
+{
+	FILE* pf = fopen("admin.txt", "wb");
+	fwrite(phead, sizeof(struct customer), 1, pf);
+	fclose(pf);
 	printf("保存成功\n按回车继续");
 	getchar(stream);
 }
 
-void loadFromFile(struct customer* phead, const wchar_t* filename)
+void LoadFromFile(struct customer* phead)
 {
-	if (phead->next != NULL)
-		cleardata(phead->next);
-	FILE* fp = fopen("data.txt", "r");
-	if (!fp) {
-		wprintf(L"无法打开文件\n");
+	//if (phead->next != NULL)
+	//	cleardata(phead->next);
+	FILE* pf = fopen("admin.txt", "rb");
+	if (!pf)
+	{
+		ferror(errno);
 		return;
 	}
-	wchar_t name[100];
-	while (fgetws(name, 100, fp))
-	{
-		if (name != '\n')
-		{
-			phead->next = (struct customer*)malloc(sizeof(struct customer));
-			phead = phead->next;
-		}
-		swprintf(phead->name, 100, L"%ls", name); // 将读取的名字设置到最后一个节点  
-	}
-	phead->next = NULL;
-	fclose(fp);
+	fread(phead, sizeof(struct customer), 1, pf);
+	fclose(pf);
 }
 
 
