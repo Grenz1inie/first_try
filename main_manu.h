@@ -5,14 +5,28 @@
 
 #include"basic_header.h"
 #include"sub_manu.h"
+#include"account_and_password.h"
 
 void main_login_manu(FILE* stream)
 {
-	char account[12] = { 0 }, password[7] = {0};
+	char account[12] = { 0 }, password[7] = { 0 }, * temp = NULL;
 	gets(account);
-	gets(password);
-
-				admin(stream);
+	if (check_access(account))
+		for (char* temp = return_password(account);;)
+		{
+			gets(password);
+			if (!strcmp(password, "0"))
+				return;
+			else
+				if (!strcmp(password, temp))
+					admin(stream);
+				else
+				{
+					continue;
+				}
+		}
+	else
+		return;
 }
 
 

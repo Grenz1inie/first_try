@@ -28,11 +28,17 @@ struct expense_record
 
 struct customer
 {
-	char access[10];		//用户权限
+	char access[12];		//用户权限
 	wchar_t name[100];		//用户姓名
 	int phone_number[20];	//用户联系方式
 	struct expense_record;	//用户消费记录
 	struct customer* next;	//下一节点
+};
+
+struct user
+{
+	char account[12];
+	char password[7];
 };
 
 struct customer* create(void)
@@ -164,4 +170,4 @@ void LoadFromFile(struct customer* phead, FILE* stream)
 }
 
 
-#endif // FUNCTIONS_H
+#endif

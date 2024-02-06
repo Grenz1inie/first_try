@@ -131,6 +131,7 @@
     <ClCompile Include="main.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="account_and_password.h" />
     <ClInclude Include="struct_and_functions.h" />
     <ClInclude Include="basic_header.h" />
     <ClInclude Include="main_manu.h" />

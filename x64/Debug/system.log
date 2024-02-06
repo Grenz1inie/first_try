@@ -1,16 +1,20 @@
 ﻿  main.c
-E:\Git repository\first_try\struct_and_functions.h(68,11): warning C4087: “getchar”: 用“void”参数列表声明
-E:\Git repository\first_try\struct_and_functions.h(68,28): warning C4087: “getchar”: 用“void”参数列表声明
-E:\Git repository\first_try\struct_and_functions.h(77,12): warning C4087: “getchar”: 用“void”参数列表声明
-E:\Git repository\first_try\struct_and_functions.h(77,29): warning C4087: “getchar”: 用“void”参数列表声明
-E:\Git repository\first_try\struct_and_functions.h(85,11): warning C4087: “getchar”: 用“void”参数列表声明
-E:\Git repository\first_try\struct_and_functions.h(85,28): warning C4087: “getchar”: 用“void”参数列表声明
-E:\Git repository\first_try\struct_and_functions.h(101,10): warning C4087: “getchar”: 用“void”参数列表声明
-E:\Git repository\first_try\struct_and_functions.h(101,27): warning C4087: “getchar”: 用“void”参数列表声明
-E:\Git repository\first_try\struct_and_functions.h(138,10): warning C4087: “getchar”: 用“void”参数列表声明
-E:\Git repository\first_try\struct_and_functions.h(149,15): warning C4047: “函数”:“FILE *”与“int”的间接级别不同
-E:\Git repository\first_try\struct_and_functions.h(149,10): warning C4024: “ferror”: 形参和实参 1 的类型不同
-E:\Git repository\first_try\struct_and_functions.h(163,10): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\struct_and_functions.h(74,11): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\struct_and_functions.h(74,28): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\struct_and_functions.h(83,12): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\struct_and_functions.h(83,29): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\struct_and_functions.h(91,11): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\struct_and_functions.h(91,28): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\struct_and_functions.h(107,10): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\struct_and_functions.h(107,27): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\struct_and_functions.h(144,10): warning C4087: “getchar”: 用“void”参数列表声明
+E:\Git repository\first_try\struct_and_functions.h(155,15): warning C4047: “函数”:“FILE *”与“int”的间接级别不同
+E:\Git repository\first_try\struct_and_functions.h(155,10): warning C4024: “ferror”: 形参和实参 1 的类型不同
+E:\Git repository\first_try\struct_and_functions.h(169,10): warning C4087: “getchar”: 用“void”参数列表声明
 E:\Git repository\first_try\sub_manu.h(23,28): warning C4087: “getchar”: 用“void”参数列表声明
-E:\Git repository\first_try\main_manu.h(12,2): warning C4013: “gets”未定义；假设外部返回 int
+E:\Git repository\first_try\account_and_password.h(14,15): warning C4047: “函数”:“FILE *”与“int”的间接级别不同
+E:\Git repository\first_try\account_and_password.h(14,10): warning C4024: “ferror”: 形参和实参 1 的类型不同
+E:\Git repository\first_try\account_and_password.h(32,15): warning C4047: “函数”:“FILE *”与“int”的间接级别不同
+E:\Git repository\first_try\account_and_password.h(32,10): warning C4024: “ferror”: 形参和实参 1 的类型不同
+E:\Git repository\first_try\main_manu.h(13,2): warning C4013: “gets”未定义；假设外部返回 int
   system.vcxproj -> E:\Git repository\first_try\x64\Debug\system.exe
