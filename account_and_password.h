@@ -49,5 +49,4 @@ char* return_password(char* input)
 	}
 }
 
-
 #endif
